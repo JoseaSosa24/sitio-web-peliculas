@@ -1,0 +1,1763 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Best Movies</title>
+    <link rel="shortcut icon" href="img/img-menu/ico-menu.png" type="image/x-icon">
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css">
+    <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script> </script>
+  </head>
+  <body class="cuerpo">
+
+    <nav class="menu navbar navbar-expand-lg shadow-lg sticky-top" id="menu">
+
+        <div class="container-fluid">
+            <a href="#" class="menu_titulo d-inline-block align-text-lg-center  text-decoration-none  fs-3 fw-bold ">
+              <img class=" rounded-4 d-inline-block align-text-center "  src="./img/img-menu/ico-menu.png" alt=""
+                width="100"
+                height="100"> </a>
+              
+          <!-- Botón hamburguesa -->
+          <button class="menu_btn navbar-toggler " type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation" >
+            <span class="navbar-toggler-icon"></span>
+
+
+          </button>
+          <div class=" collapse navbar-collapse " id="navbarNav">
+            <ul class="navbar-nav d-flex  align-items-lg-center ">
+                <li class="nav-item">
+                  <a class="nav-link text-uppercase fw-bold fs-5 border p-2 mx-2 rounded-5 border-light text-light" aria-current="page" href="#">Inicio</a>
+                </li>
+           
+                <li class="nav-item">
+                  <a class="nav-link text-uppercase fw-bold fs-5 border p-2 mx-2 rounded-5 border-light text-light " aria-current="page" href="#1">Estrenos</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-uppercase fw-bold fs-5 border p-2 mx-2 rounded-5 border-light text-light " aria-current="page" href="#2">Religiosas</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-uppercase fw-bold fs-5 border p-2 mx-2 rounded-5 border-light text-light" href="#3">Comedia</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-uppercase fw-bold fs-5 border p-2 mx-2 rounded-5 border-light text-light" href="#4">Animacción</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-uppercase fw-bold fs-5 border p-2 mx-2 rounded-5 border-light text-light" href="#5">Acción</a>
+                </li>
+                <!-- <li class="nav-item">
+                  <a class="nav-link text-uppercase fw-bold fs-5 border p-2 mx-2 rounded-5 border-light text-light" href="#6">Otros</a>
+                </li> -->
+               
+            </ul>
+                <form class="d-flex fmrbuscar">
+                    <i class=""> <img src="./img/img-menu/ico-menu-buscar.png" alt=""></i>
+                    <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Buscar">
+                    <button class="btn btn-outline-info" type="submit">Buscar</button>
+                </form>
+            
+          </div>
+          
+        </div>
+      </nav>
+
+      <!-- CARRUSEL -->
+      <!-- <div class="col"></div> -->
+      <div id="carouselExampleCaptions" class="carrusel carousel slide m-5 " data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" aria-label="Slide 4"></button>
+        </div>
+        <div class="carousel-inner ">
+          <div class="carousel-item active " data-bs-interval="8000" >
+            <img src="./img/img-carrusel principal/corazon de padre.jpg" class="d-block w-100 " alt="...">
+            <div class="carousel-caption d-none d-md-block ">
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="./img/img-carrusel principal/top gun.jpg" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="./img/img-carrusel principal/padrestu.jpg" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="./img/img-carrusel principal/la bestia.jpg" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+            </div>
+          </div>
+        </div>
+        <button class=" carousel-control-prev"  type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Anterior</span>
+        </button>
+        <button class=" carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Siguiente</span>
+        </button>
+      </div>
+     
+
+    <!--secciones de las peliculas (categorias)  -->
+    
+      <div class="secciones">
+        <!-- SECCION 1 -->
+        <div class="seccion" id="1">
+          <div class="">
+            <h1>Estrenos</h1>
+            
+            <div class="row row-cols-2 row-cols-md-6 g-2">
+                <div class="col">
+                    <div class="poster "><!-- Si quiero la img metida en una card, agrego card a la clase -->
+
+                      <figure>
+                          <img src="./img/img-secciones/img-estrenos/1.poster-LaBestia.jpg" class="card-img card-img-top" alt="..."> 
+                                  <div class="contenido">
+                                      <h3 class="titulo">La Bestia</h3>
+                                      <p>El Doctor Nate Samuels, que se ha quedado viudo recientemente, regresa a Sudáfrica, lugar en el que conoció a su mujer..!</p>
+                                      <a class="btn bg-light fw-bold " data-bs-toggle="modal" data-bs-target="#Modal1"> 
+                                        Trailer 
+                                      </a>
+                                  </div>
+                          </figure>
+                        
+                          <div class="card-body p-0 "> <!-- class=capa -->
+                            <h3 class="card-title">La Bestia</h3>
+                              <!-- Modal -->
+                                <div class="modal fade modal-lg" id="Modal1"  aria-labelledby="ModalLabel" aria-hidden="true">
+                                  <div class="modal-dialog">
+                                    <div class="modal-content">
+                                      <div class="modal-header ">
+                                        <h5 class="modal-title" id="ModalLabel">Trailer</h5>
+                                        <button type="button" class="btn-close bg-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                                      </div>
+                                      <!-- VIDEO EN EL MODAL -->
+                                      <div class="modal-body">
+                                        <div class="embed-responsive embed-responsive-4by3 ratio ratio-16x9">
+                                          <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/ek415o7G51M" id="iframeVideo"></iframe>
+                                      </div>
+                                      </div>
+                                      <div class="modal-footer d-flex align-items-center justify-content-center">
+                                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                                
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                                <!-- FIN MODAL -->
+                            
+                            <!-- <p class="ficha">   2022  </p>
+                            <p class="ficha"> 1h 40m</p>
+                            <p class="ficha">‧Action/Fantasy</p> -->
+                              <!-- <p>El Doctor Nate Samuels, que se ha quedado viudo recientemente, regresa a Sudáfrica, lugar en el que conoció a su mujer..!</p>
+                              <a class="btn bg-light d-flex align-items-center text-center justify-content-center fw-bold " data-bs-toggle="modal" data-bs-target="#Modal19"> 
+                                Trailer 
+                              </a>   -->
+                          </div>
+                        
+                      </div>
+                  </div>
+                <div class="col">
+                  <div class="poster">
+
+                    <figure>
+                      <img src="./img/img-secciones/img-estrenos/2.poster-bullet_train.jpg" class="card-img card-img-top" alt="...">
+                       <div class="contenido">
+                                      <h3 class="titulo">Tren bala</h3>
+                                      <p>Cinco asesinos a sueldo se encuentran a bordo de un tren bala que viaja de Tokio a Morioka con unas pocas paradas intermedias.</p>
+                                      <a class="btn fw-bold " data-bs-toggle="modal" data-bs-target="#Modal2"  > 
+                                        Trailer 
+                                      </a>
+                      </div><!-- Fin contenido -->
+
+                       
+                    </figure>
+                   
+                    <div class="card-body p-0">
+                      <h3 class="card-title">Tren bala</h3>
+                      
+                      <!-- Modal -->
+                      <div class="modal fade modal-lg" id="Modal2" tabindex="-1" aria-labelledby="ModalLabel" aria-hidden="true">
+                        <div class="modal-dialog">
+                          <div class="modal-content">
+                            <div class="modal-header ">
+                              <h5 class="modal-title" id="ModalLabel">Trailer</h5>
+                              <button type="button" class="btn-close bg-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                              <div class="embed-responsive embed-responsive-4by3 ratio ratio-16x9">
+                                <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/4VJv_Z1LyH0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" id="iframeVideo" allowfullscreen></iframe>
+                              </div>
+                            </div>
+                            <div class="modal-footer d-flex align-items-center justify-content-center">
+                              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <!-- FIN MODAL -->
+
+                  
+                      <p class="card-text"></p>
+                    </div>
+                    <!-- <div class="card-footer">
+                        <button type="submit" class="btn btn-primary align-items-center">Ver Trailer</button>
+                        <button type="submit" class="btn btn-primary align-items-center">Adquirir</button>
+                      </div> -->
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="poster">
+                    <figure>  
+                      <img src="./img/img-secciones/img-estrenos/3.poster-the_gray_man.jpg" class="card-img card-img-top" alt="...">
+                      <div class="contenido">
+                                      <h3 class="titulo">El Hombre Gris</h3>
+                                      <p class="card-text">Un exagente de la CIA, ahora convertido en asesino a sueldo, Court Gentry (Gosling), se encuentra fugado y es perseguido por un viejo colega, el agente Lloyd Hansen (Evans).</p>
+                                      <a class="btn bg-light fw-bold " data-bs-toggle="modal" data-bs-target="#Modal3"> 
+                                        Trailer 
+                                      </a>
+                                  </div>
+                          </figure>
+                    <div class="card-body">
+                      <h3 class="card-title">El Hombre Gris</h3>
+                           <!-- Modal -->
+                      <div class="modal fade modal-lg" id="Modal3" tabindex="-1" aria-labelledby="ModalLabel" aria-hidden="true">
+                        <div class="modal-dialog">
+                          <div class="modal-content">
+                            <div class="modal-header ">
+                              <h5 class="modal-title" id="ModalLabel">Trailer</h5>
+                              <button type="button" class="btn-close bg-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                              <div class="embed-responsive ratio ratio-16x9">
+                                <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/xlh-BkrXIJs" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" id="iframeVideo" allowfullscreen></iframe>
+                              </div>
+                            </div>
+                            <div class="modal-footer d-flex align-items-center justify-content-center">
+                              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                      
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <!-- FIN MODAL -->
+                      <p class="card-text"></p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="poster">
+
+                    <figure>
+                          <img src="./img/img-secciones/img-estrenos/4.poster-day_shift.jpg" class="card-img card-img-top" alt="..."> 
+                                  <div class="contenido">
+                                      <h3 class="titulo">Turno del día</h3>
+                                      <p>Tiene una semana para reunir el dinero necesario para pagar las clases y el dentista de su hija. Pero ganarse la vida como cazador de vampiros cada vez es más arriesgado.</p>
+                                      <a class="btn bg-light fw-bold " data-bs-toggle="modal" data-bs-target="#Modal4"> 
+                                        Trailer 
+                                      </a>
+                                  </div>
+                          </figure>
+                    <div class="card-body">
+                      <h3 class="card-title">Turno del día</h3>
+                             <!-- Modal -->
+                      <div class="modal fade modal-lg" id="Modal4" tabindex="-1" aria-labelledby="ModalLabel" aria-hidden="true">
+                        <div class="modal-dialog">
+                          <div class="modal-content">
+                            <div class="modal-header ">
+                              <h5 class="modal-title" id="ModalLabel">Trailer</h5>
+                              <button type="button" class="btn-close bg-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <div class="embed-responsive ratio ratio-16x9">
+                                  <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/_GZdqPAWrO8" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" id="iframeVideo" allowfullscreen></iframe>
+                                </div>
+                            </div>
+                            <div class="modal-footer d-flex align-items-center justify-content-center">
+                              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                      
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <!-- FIN MODAL -->
+                      <p class="card-text"></p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                    <div class="poster">
+
+                      <figure>
+                          <img src="./img/img-secciones/img-estrenos/5.poster-secret_headquarters.jpg" class="card-img card-img-top" alt="..."> 
+                                  <div class="contenido">
+                                      <h3 class="titulo">Secret Headquarters</h3>
+                                      <p>Mientras pasan el rato después del colegio, Charlie y sus amigos descubren el cuartel general del superhéroe más poderoso del mundo escondido bajo su casa. </p>
+                                      <a class="btn bg-light fw-bold" data-bs-toggle="modal" data-bs-target="#Modal5" > 
+                                        Trailer 
+                                      </a>
+                                  </div>
+                          </figure>
+                      <div class="card-body">
+                        <h3 class="card-title">Secret Headquarters</h3>
+                      <!-- Modal -->
+                          <div class="modal fade modal-lg" id="Modal5" tabindex="-1" aria-labelledby="ModalLabel" aria-hidden="true">
+                            <div class="modal-dialog">
+                              <div class="modal-content">
+                                <div class="modal-header ">
+                                  <h5 class="modal-title" id="ModalLabel">Trailer</h5>
+                                  <button type="button" class="btn-close bg-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                  <div class="embed-responsive ratio ratio-16x9">
+                                    <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/JR2hwFpllz4" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" id="iframeVideo" allowfullscreen></iframe>
+                                  </div>
+                                </div>
+                                <div class="modal-footer d-flex align-items-center justify-content-center">
+                                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                          
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                      <!-- FIN MODAL -->
+                        <p class="card-text"></p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col">
+                    <div class="poster">
+
+                      <figure>
+                          <img src="./img/img-secciones/img-estrenos/6.poster-thor_love_and_thunder.jpg" class="card-img card-img-top" alt="..."> 
+                                  <div class="contenido">
+                                      <h3 class="titulo ">Thor: Love and Thunder</h3>
+                                      <p>Cuarta película sobre "Thor" del MCU, en la que el Dios del trueno contará con Lady Thor como acompañante, personaje que interpretará Natalie Portman.</p>
+                                      <a class="btn bg-light fw-bold " data-bs-toggle="modal" data-bs-target="#Modal6"> 
+                                        Trailer 
+                                      </a>
+                                  </div>
+                          </figure>
+                      <div class="card-body">
+                        <h3 class="card-title">Thor: Love and Thunder</h3>
+                          <!-- Modal -->
+                                <div class="modal fade modal-lg" id="Modal6" tabindex="-1" aria-labelledby="ModalLabel" aria-hidden="true">
+                                  <div class="modal-dialog">
+                                    <div class="modal-content">
+                                      <div class="modal-header ">
+                                        <h5 class="modal-title" id="ModalLabel">Trailer</h5>
+                                        <button type="button" class="btn-close bg-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                                      </div>
+                                      <div class="modal-body">
+                                        <div class="embed-responsive ratio ratio-16x9">
+                                          <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/vKKu-Wt7O2Q" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" id="iframeVideo" allowfullscreen></iframe>
+                                        </div>
+                                      </div>
+                                      <div class="modal-footer d-flex align-items-center justify-content-center">
+                                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                                
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                      <!-- FIN MODAL -->
+                        <p class="card-text"></p>
+                      </div>
+                    </div>
+                  </div>
+                  
+              </div>
+          </div>
+        </div>
+       <!-- FIN SECCIÓN 1 -->
+
+       <!-- SECCION2 -->
+        <div class="seccion" id="2">
+          <div class="">
+            <h1>Religiosas</h1>
+            <div class="row row-cols-2 row-cols-md-6 g-2">
+                <div class="col">
+                  <div class="poster">
+                    <figure>
+                        <img src="./img/img-secciones/img-religiosas/1.poster-father_stu.jpg" class="card-img card-img-top" alt="..."> 
+                                  <div class="contenido">
+                                      <h3 class="titulo">El milagro del Padre Stu</h3>
+                                      <p>Stuart Long, un boxeador convertido 
+                                        en sacerdote que inspiró a innumerables personas durante
+                                        su viaje desde la autodestrucción hasta la redención.</p>
+                                      <a class="btn bg-light fw-bold" data-bs-toggle="modal" data-bs-target="#Modal7"  >Trailer </a>
+                                  </div>
+                          </figure>
+                    <div class="card-body">
+                      <h3 class="card-title">El milagro del Padre Stu</h3>
+                        <!-- Modal -->
+                        <div class="modal fade modal-lg" id="Modal7"  aria-labelledby="ModalLabel" aria-hidden="true">
+                          <div class="modal-dialog">
+                            <div class="modal-content">
+                              <div class="modal-header ">
+                                <h5 class="modal-title" id="ModalLabel">Trailer</h5>
+                                <button type="button" id="btnvideo" class="btn-close bg-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                              </div>
+                              <!-- VIDEO EN EL MODAL -->
+                              <div class="modal-body">
+                                <div class="embed-responsive embed-responsive-4by3 ratio ratio-16x9">
+                                  <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/f-p516ykDRE" id="iframeVideo"></iframe>
+                              </div>
+                              </div>
+                              <div class="modal-footer d-flex align-items-center justify-content-center">
+                                <button type="button"  class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                        
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <!-- FIN MODAL -->
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="poster">
+                    <figure>
+                          <img src="./img/img-secciones/img-religiosas/2.poster-corazonardiente.jpg"  class="card-img card-img-top" alt="..."> 
+                                  <div class="contenido">
+                                      <h3 class="titulo">Corazón ardiente</h3>
+                                      <p>Lupe Valdés, 
+                                        investiga las apariciones del Sagrado Corazón de Jesús. 
+                                        En su investigación, Lupe irá descubriendo también 
+                                        los secretos de su propio corazón, 
+                                        afligido por heridas que necesitan ser sanadas.</p>
+                                      <a class="btn bg-light fw-bold" data-bs-toggle="modal" data-bs-target="#Modal8" > 
+                                        Trailer 
+                                      </a>
+                                  </div>
+                          </figure>
+                    
+                    <div class="card-body">
+                      <h3 class="card-title">Corazón ardiente</h3>
+                        <!-- Modal -->
+                        <div class="modal fade modal-lg" id="Modal8"  aria-labelledby="ModalLabel" aria-hidden="true">
+                          <div class="modal-dialog">
+                            <div class="modal-content">
+                              <div class="modal-header ">
+                                <h5 class="modal-title" id="ModalLabel">Trailer</h5>
+                                <button type="button" id="btnvideo" class="btn-close bg-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                              </div>
+                              <!-- VIDEO EN EL MODAL -->
+                              <div class="modal-body">
+                                <div class="embed-responsive embed-responsive-4by3 ratio ratio-16x9">
+                                  <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/-qYcgzsG1xo" id="iframeVideo"></iframe>
+                              </div>
+                              </div>
+                              <div class="modal-footer d-flex align-items-center justify-content-center">
+                                <button type="button"  class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                        
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <!-- FIN MODAL -->
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="poster">
+
+                    <figure>
+                          <img src="./img/img-secciones/img-religiosas/3.poster-corazondepadre.jpg" height="350PX" class="card-img card-img-top" alt="..."> 
+                                  <div class="contenido">
+                                      <h3 class="titulo">Corazón de padre</h3>
+                                      <p>¿Quién es en realidad José de Nazaret? Hemos emprendido un viaje por el mundo para averiguar si es cierto lo que aseguran algunos: 
+                                        que este hombre misterioso está hoy más activo que nunca.</p>
+                                      <a class="btn bg-light fw-bold "data-bs-toggle="modal" data-bs-target="#Modal9" > Trailer  </a>
+                                  </div>
+                          </figure>
+                  
+                    <div class="card-body">
+                      <h3 class="card-title">Corazón de padre</h3>
+                          <!-- Modal -->
+                        <div class="modal fade modal-lg" id="Modal9"  aria-labelledby="ModalLabel" aria-hidden="true">
+                          <div class="modal-dialog">
+                            <div class="modal-content">
+                              <div class="modal-header ">
+                                <h5 class="modal-title" id="ModalLabel">Trailer</h5>
+                                <button type="button" id="btnvideo" class="btn-close bg-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                              </div>
+                              <!-- VIDEO EN EL MODAL -->
+                              <div class="modal-body">
+                                <div class="embed-responsive embed-responsive-4by3 ratio ratio-16x9">
+                                  <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/zfxSTLguH9c" id="iframeVideo"></iframe>
+                              </div>
+                              </div>
+                              <div class="modal-footer d-flex align-items-center justify-content-center">
+                                <button type="button"  class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                        
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <!-- FIN MODAL -->
+                      
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="poster">
+
+                    <figure>
+                          <img src="./img/img-secciones/img-religiosas/4.poster-amanece_en_calcuta.jpg" class="card-img card-img-top" alt="..."> 
+                                  <div class="contenido">
+                                      <h3 class="titulo">Amanece en Calcuta</h3>
+                                      <p>Documental que muestra el legado de Santa Teresa de Calcuta a través del testimonio de creyentes españoles.</p>
+                                      <a class="btn bg-light fw-bold " data-bs-toggle="modal" data-bs-target="#Modal10"> 
+                                        Trailer 
+                                      </a>
+                                  </div>
+                          </figure>
+                    
+                    <div class="card-body">
+                      <h3 class="card-title">Amanece en Calcuta</h3>
+                      <!-- Modal -->
+                      <div class="modal fade modal-lg" id="Modal10"  aria-labelledby="ModalLabel" aria-hidden="true">
+                        <div class="modal-dialog">
+                          <div class="modal-content">
+                            <div class="modal-header ">
+                              <h5 class="modal-title" id="ModalLabel">Trailer</h5>
+                              <button type="button" id="btnvideo" class="btn-close bg-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <!-- VIDEO EN EL MODAL -->
+                            <div class="modal-body">
+                              <div class="embed-responsive embed-responsive-4by3 ratio ratio-16x9">
+                                <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/1161M8ddvAQ" id="iframeVideo"></iframe>
+                            </div>
+                            </div>
+                            <div class="modal-footer d-flex align-items-center justify-content-center">
+                              <button type="button"  class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                      
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <!-- FIN MODAL -->
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                    <div class="poster">
+
+                      <figure>
+                          <img src="./img/img-secciones/img-religiosas/5.poster-ignacio_de_loyola.jpg" class="card-img card-img-top" alt="..."> 
+                                  <div class="contenido">
+                                      <h3 class="titulo">Ignacio de Loyola</h3>
+                                      <p>Drama basado en las memorias de Ignacio de Loyola, fundador de la Compañía de Jesús, la orden de los Jesuitas. Un joven soldado, se ve obligado a renunciar a su carrera militar tras resultar herido en una batalla.</p>
+                                      <a class="btn bg-light fw-bold " data-bs-toggle="modal" data-bs-target="#Modal11"> 
+                                        Trailer 
+                                      </a>
+                                  </div>
+                          </figure>
+                      
+                      <div class="card-body">
+                        <h3 class="card-title">Ignacio de Loyola</h3>
+                            <!-- Modal -->
+                              <div class="modal fade modal-lg" id="Modal11"  aria-labelledby="ModalLabel" aria-hidden="true">
+                                <div class="modal-dialog">
+                                  <div class="modal-content">
+                                    <div class="modal-header ">
+                                      <h5 class="modal-title" id="ModalLabel">Trailer</h5>
+                                      <button type="button" id="btnvideo" class="btn-close bg-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                                    </div>
+                                    <!-- VIDEO EN EL MODAL -->
+                                    <div class="modal-body">
+                                      <div class="embed-responsive embed-responsive-4by3 ratio ratio-16x9">
+                                        <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/buL2q3SUZnE" id="iframeVideo"></iframe>
+                                    </div>
+                                    </div>
+                                    <div class="modal-footer d-flex align-items-center justify-content-center">
+                                      <button type="button"  class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                              
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            <!-- FIN MODAL -->
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col">
+                    <div class="poster">
+
+                      <figure>
+                          <img src="./img/img-secciones/img-religiosas/6.poster-the_two_popes.jpg" class="card-img card-img-top" alt="..."> 
+                                  <div class="contenido">
+                                      <h3 class="titulo">Los dos papas</h3>
+                                      <p>Explora la relación que mantuvieron el Papa Benedicto XVI y el Papa Francisco, dos de los líderes de la Iglesia Católica, que abordan sus propios pasados 
+                                        ​​y las demandas del mundo moderno para que la institución avance.</p>
+                                      <a class="btn bg-light fw-bold " data-bs-toggle="modal" data-bs-target="#Modal12"> 
+                                        Trailer 
+                                      </a>
+                                  </div>
+                          </figure>
+                      
+                      <div class="card-body">
+                        <h3 class="card-title">Los dos papas</h3>
+                            <!-- Modal -->
+                                <div class="modal fade modal-lg" id="Modal12"  aria-labelledby="ModalLabel" aria-hidden="true">
+                                  <div class="modal-dialog">
+                                    <div class="modal-content">
+                                      <div class="modal-header ">
+                                        <h5 class="modal-title" id="ModalLabel">Trailer</h5>
+                                        <button type="button" id="btnvideo" class="btn-close bg-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                                      </div>
+                                      <!-- VIDEO EN EL MODAL -->
+                                      <div class="modal-body">
+                                        <div class="embed-responsive embed-responsive-4by3 ratio ratio-16x9">
+                                          <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/epf-XMQ5Q8M" id="iframeVideo"></iframe>
+                                      </div>
+                                      </div>
+                                      <div class="modal-footer d-flex align-items-center justify-content-center">
+                                        <button type="button"  class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                                
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                          <!-- FIN MODAL -->
+                      </div>
+                    </div>
+                  </div>
+                  
+              </div>
+          </div>
+          </div>
+       <!-- FIN SECCIÓN 2 --> 
+
+        <!-- SECCIÓN 3 -->  
+        <div class="seccion" id="3">
+          <div class="">
+            <h1 class="seccion_titulo">Comedia</h1>
+          
+            <div class="row row-cols-2 row-cols-md-6 g-2">
+                <div class="col">
+                  <div class="poster">
+
+                    <figure>
+                          <img src="./img/img-secciones/img-comedia/1.poster-blue_streak.jpg" class="card-img card-img-top" alt="..."> 
+                                  <div class="contenido">
+                                      <h3 class="titulo">De ladrón a policía</h3>
+                                      <p>Miles siempre se ha dedicado a lo mismo: robar. 
+                                        Su último golpe parece que ha salido a la perfección y su botín ha sido un lujoso diamante.</p>
+                                      <a class="btn bg-light fw-bold " data-bs-toggle="modal" data-bs-target="#Modal13"> 
+                                        Trailer 
+                                      </a>
+                                  </div>
+                          </figure>
+                    
+                    <div class="card-body">
+                      <h3 class="card-title">De ladrón a policía</h3>
+                                <!-- Modal -->
+                              <div class="modal fade modal-lg" id="Modal13"  aria-labelledby="ModalLabel" aria-hidden="true">
+                                <div class="modal-dialog">
+                                  <div class="modal-content">
+                                    <div class="modal-header ">
+                                      <h5 class="modal-title" id="ModalLabel">Trailer</h5>
+                                      <button type="button" id="btnvideo" class="btn-close bg-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                                    </div>
+                                    <!-- VIDEO EN EL MODAL -->
+                                    <div class="modal-body">
+                                      <div class="embed-responsive embed-responsive-4by3 ratio ratio-16x9">
+                                        <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/eATYLQobnII" id="iframeVideo"></iframe>
+                                    </div>
+                                    </div>
+                                    <div class="modal-footer d-flex align-items-center justify-content-center">
+                                      <button type="button"  class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                              
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            <!-- FIN MODAL -->
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="poster">
+
+                    <figure>
+                          <img src="./img/img-secciones/img-comedia/2.poster-liar_liar.jpg" class="card-img card-img-top" alt="..."> 
+                                  <div class="contenido">
+                                      <h3 class="titulo">Mentiroso compulsivo</h3>
+                                      <p>Fletcher Reed es un servidor de la justicia que se atiene a un sólo código ético: la verdad es negociable.  
+                                        no tiene rival en cuanto a exagerar y distorsionar la verdad. </p>
+                                      <a class="btn bg-light fw-bold "data-bs-toggle="modal" data-bs-target="#Modal14"> 
+                                        Trailer 
+                                      </a>
+                                  </div>
+                          </figure>
+                    
+                    <div class="card-body">
+                      <h3 class="card-title">Mentiroso compulsivo</h3>
+                              <!-- Modal -->
+                              <div class="modal fade modal-lg" id="Modal14"  aria-labelledby="ModalLabel" aria-hidden="true">
+                                <div class="modal-dialog">
+                                  <div class="modal-content">
+                                    <div class="modal-header ">
+                                      <h5 class="modal-title" id="ModalLabel">Trailer</h5>
+                                      <button type="button" id="btnvideo" class="btn-close bg-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                                    </div>
+                                    <!-- VIDEO EN EL MODAL -->
+                                    <div class="modal-body">
+                                      <div class="embed-responsive embed-responsive-4by3 ratio ratio-16x9">
+                                        <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/C1no75lpOiw" id="iframeVideo"></iframe>
+                                    </div>
+                                    </div>
+                                    <div class="modal-footer d-flex align-items-center justify-content-center">
+                                      <button type="button"  class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                              
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            <!-- FIN MODAL -->
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="poster">
+
+                    <figure>
+                          <img src="./img/img-secciones/img-comedia/3.poster-the_mask.jpg" class="card-img card-img-top" alt="..."> 
+                                  <div class="contenido">
+                                      <h3 class="titulo">La máscara</h3>
+                                      <p>Stanley Ipkiss es un empleado de banca extremadamente amable, pero es un pusilánime cuando tiene que enfrentarse a alguien.</p>
+                                      <a class="btn bg-light fw-bold" data-bs-toggle="modal" data-bs-target="#Modal15">  
+                                        Trailer 
+                                      </a>
+                                  </div>
+                          </figure>
+                    <div class="card-body">
+                      <h3 class="card-title">La máscara</h3>
+                              <!-- Modal -->
+                              <div class="modal fade modal-lg" id="Modal15"  aria-labelledby="ModalLabel" aria-hidden="true">
+                                <div class="modal-dialog">
+                                  <div class="modal-content">
+                                    <div class="modal-header ">
+                                      <h5 class="modal-title" id="ModalLabel">Trailer</h5>
+                                      <button type="button" id="btnvideo" class="btn-close bg-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                                    </div>
+                                    <!-- VIDEO EN EL MODAL -->
+                                    <div class="modal-body">
+                                      <div class="embed-responsive embed-responsive-4by3 ratio ratio-16x9">
+                                        <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/DhP0P4q8jLk" id="iframeVideo"></iframe>
+                                    </div>
+                                    </div>
+                                    <div class="modal-footer d-flex align-items-center justify-content-center">
+                                      <button type="button"  class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                              
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            <!-- FIN MODAL -->  
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="poster">
+
+                    <figure>
+                          <img src="./img/img-secciones/img-comedia/4.poster-the_lost_city.jpg" class="card-img card-img-top" alt="..."> 
+                                  <div class="contenido">
+                                      <h3 class="titulo">La ciudad perdida </h3>
+                                      <p>Durante una gira para promocionar su nuevo libro junto a Alan, Loretta es raptada por un excéntrico multimillonario , con la intención de que la autora le guíe hasta el tesoro de la antigua ciudadad... </p>
+                                      <a class="btn bg-light fw-bold " data-bs-toggle="modal" data-bs-target="#Modal16"> 
+                                        Trailer 
+                                      </a>
+                                  </div>
+                          </figure>
+                    
+                    <div class="card-body">
+                      <h3 class="card-title">La ciudad perdida</h3>
+                                    <!-- Modal -->
+                              <div class="modal fade modal-lg" id="Modal16"  aria-labelledby="ModalLabel" aria-hidden="true">
+                                <div class="modal-dialog">
+                                  <div class="modal-content">
+                                    <div class="modal-header ">
+                                      <h5 class="modal-title" id="ModalLabel">Trailer</h5>
+                                      <button type="button" id="btnvideo" class="btn-close bg-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                                    </div>
+                                    <!-- VIDEO EN EL MODAL -->
+                                    <div class="modal-body">
+                                      <div class="embed-responsive embed-responsive-4by3 ratio ratio-16x9">
+                                        <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/cP5tjsc4aqQ" id="iframeVideo"></iframe>
+                                    </div>
+                                    </div>
+                                    <div class="modal-footer d-flex align-items-center justify-content-center">
+                                      <button type="button"  class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                              
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            <!-- FIN MODAL -->
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                    <div class="poster">
+
+                      <figure>
+                          <img src="./img/img-secciones/img-comedia/5.poster-central_intelligence.jpg" class="card-img card-img-top" alt="..."> 
+                                  <div class="contenido">
+                                      <h3 class="titulo">Un espía y medio</h3>
+                                      <p>Un letal agente del la CIA (Johnson), víctima de acoso escolar en su adolescencia, vuelve a casa para asistir a una reunión de antiguos alumnos.</p>
+                                      <a class="btn bg-light fw-bold " data-bs-toggle="modal" data-bs-target="#Modal17"> 
+                                        Trailer 
+                                      </a>
+                                  </div>
+                          </figure>
+    
+                      <div class="card-body">
+                        <h3 class="card-title">Un espía y medio</h3>
+                              <!-- Modal -->
+                              <div class="modal fade modal-lg" id="Modal17"  aria-labelledby="ModalLabel" aria-hidden="true">
+                                <div class="modal-dialog">
+                                  <div class="modal-content">
+                                    <div class="modal-header ">
+                                      <h5 class="modal-title" id="ModalLabel">Trailer</h5>
+                                      <button type="button" id="btnvideo" class="btn-close bg-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                                    </div>
+                                    <!-- VIDEO EN EL MODAL -->
+                                    <div class="modal-body">
+                                      <div class="embed-responsive embed-responsive-4by3 ratio ratio-16x9">
+                                        <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/-QJWrbYgZ6M" id="iframeVideo"></iframe>
+                                    </div>
+                                    </div>
+                                    <div class="modal-footer d-flex align-items-center justify-content-center">
+                                      <button type="button"  class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                              
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            <!-- FIN MODAL -->
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col">
+                    <div class=" poster ">
+
+                      <figure>
+                          <img src="./img/img-secciones/img-comedia/6.poster-ride_along.jpg" class="card-img card-img-top" alt="..."> 
+                                  <div class="contenido">
+                                      <h3 class="titulo">Un novato en Apuros</h3>
+                                      <p>Ben es un guarda de seguridad que se une a su cuñado en una patrulla de 24 horas por toda la ciudad para intentar demostrar a su futuro cuñado que es digno de casarse con su hermana.</p>
+                                      <a class="btn bg-light fw-bold "data-bs-toggle="modal" data-bs-target="#Modal18"> 
+                                        Trailer 
+                                      </a>
+                                  </div>
+                          </figure>
+                      
+                      <div class="card-body">
+                        <h3 class="card-title">Un novato en Apuros</h3>
+                              <!-- Modal -->
+                              <div class="modal fade modal-lg" id="Modal18"  aria-labelledby="ModalLabel" aria-hidden="true">
+                                <div class="modal-dialog">
+                                  <div class="modal-content">
+                                    <div class="modal-header ">
+                                      <h5 class="modal-title" id="ModalLabel">Trailer</h5>
+                                      <button type="button" id="btnvideo" class="btn-close bg-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                                    </div>
+                                    <!-- VIDEO EN EL MODAL -->
+                                    <div class="modal-body">
+                                      <div class="embed-responsive embed-responsive-4by3 ratio ratio-16x9">
+                                        <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/nKFHYcHnQVQ" id="iframeVideo"></iframe>
+                                    </div>
+                                    </div>
+                                    <div class="modal-footer d-flex align-items-center justify-content-center">
+                                      <button type="button"  class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                              
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            <!-- FIN MODAL -->
+                      </div>
+                    </div>
+                  </div>
+                  
+              </div>
+          </div>
+          </div>
+          <!-- DIN SECCIÓN 3 -->
+
+          <!-- Sección 4 -->
+        <div class="seccion" id="4">
+          <div class="">
+            <h1>Animacción</h1>
+            
+            <div class="row row-cols-2 row-cols-md-6 g-2">
+                <div class="col">
+                  <div class="poster">
+
+                    <figure>
+                          <img src="./img/img-secciones/img-animacción/1.poster-minions_the_rise_of_gru.jpg" class="card-img card-img-top" alt="..."> 
+                                  <div class="contenido">
+                                      <h3 class="titulo">Minions: Nace un villano</h3>
+                                      <p>Son los años 70 y Gru crece en un barrio residencial, en pleno boom de los peinados cardados y los pantalones de campana.</p>
+                                      <a class="btn bg-light fw-bold " data-bs-toggle="modal" data-bs-target="#Modal19"> 
+                                        Trailer 
+                                      </a>
+                                  </div>
+                          </figure>
+                    
+                    <div class="card-body">
+                      <h3 class="card-title">Minions: Nace un villano</h3>
+                              <!-- Modal -->
+                              <div class="modal fade modal-lg" id="Modal19"  aria-labelledby="ModalLabel" aria-hidden="true">
+                                <div class="modal-dialog">
+                                  <div class="modal-content">
+                                    <div class="modal-header ">
+                                      <h5 class="modal-title" id="ModalLabel">Trailer</h5>
+                                      <button type="button" id="btnvideo" class="btn-close bg-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                                    </div>
+                                    <!-- VIDEO EN EL MODAL -->
+                                    <div class="modal-body">
+                                      <div class="embed-responsive embed-responsive-4by3 ratio ratio-16x9">
+                                        <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/W27moupirnI" id="iframeVideo"></iframe>
+                                    </div>
+                                    </div>
+                                    <div class="modal-footer d-flex align-items-center justify-content-center">
+                                      <button type="button"  class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                              
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            <!-- FIN MODAL -->
+                     </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="poster">
+
+                    <figure>
+                          <img src="./img/img-secciones/img-animacción/2.poster-doragon_boru_supa_supa_hiro.jpg" class="card-img card-img-top" alt="..."> 
+                                  <div class="contenido">
+                                      <h3 class="titulo">Dragon Ball Super: Super Hero</h3>
+                                      <p>Son Goku destruyó en su momento a la Patrulla Roja. 
+                                        Ahora, ciertos individuos han creado a los androides definitivos: Gamma 1 y Gamma 2.</p>
+                                      <a class="btn bg-light fw-bold " data-bs-toggle="modal" data-bs-target="#Modal20"> 
+                                        Trailer 
+                                      </a>
+                                  </div>
+                          </figure>
+                    
+                    <div class="card-body">
+                      <h3 class="card-title">Dragon Ball Super:</h3>
+                      <h3 class="card-title">Super Hero</h3>
+                        <!-- Modal -->
+                          <div class="modal fade modal-lg" id="Modal20"  aria-labelledby="ModalLabel" aria-hidden="true">
+                            <div class="modal-dialog">
+                              <div class="modal-content">
+                                <div class="modal-header ">
+                                  <h5 class="modal-title" id="ModalLabel">Trailer</h5>
+                                  <button type="button" id="btnvideo" class="btn-close bg-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <!-- VIDEO EN EL MODAL -->
+                                <div class="modal-body">
+                                  <div class="embed-responsive embed-responsive-4by3 ratio ratio-16x9">
+                                    <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/uoHYirZqG48" id="iframeVideo"></iframe>
+                                </div>
+                                </div>
+                                <div class="modal-footer d-flex align-items-center justify-content-center">
+                                  <button type="button"  class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                          
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        <!-- FIN MODAL -->
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="poster">
+
+                    <figure>
+                          <img src="./img/img-secciones/img-animacción/3.poster-encanto.jpg" class="card-img card-img-top" alt="..."> 
+                                  <div class="contenido">
+                                      <h3 class="titulo">Encanto</h3>
+                                      <p>Cuenta la historia de una familia extraordinaria, los Madrigal, 
+                                        que viven escondidos en las montañas de Colombia, en una casa mágica situada en un enclave maravilloso llamado Encanto.</p>
+                                      <a class="btn bg-light fw-bold " data-bs-toggle="modal" data-bs-target="#Modal21"> 
+                                        Trailer 
+                                      </a>
+                                  </div>
+                          </figure>
+                    <div class="card-body">
+                      <h3 class="card-title">Encanto</h3>
+                            <!-- Modal -->
+                          <div class="modal fade modal-lg" id="Modal21"  aria-labelledby="ModalLabel" aria-hidden="true">
+                            <div class="modal-dialog">
+                              <div class="modal-content">
+                                <div class="modal-header ">
+                                  <h5 class="modal-title" id="ModalLabel">Trailer</h5>
+                                  <button type="button" id="btnvideo" class="btn-close bg-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <!-- VIDEO EN EL MODAL -->
+                                <div class="modal-body">
+                                  <div class="embed-responsive embed-responsive-4by3 ratio ratio-16x9">
+                                    <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/E4dCY_DvT-4" id="iframeVideo"></iframe>
+                                </div>
+                                </div>
+                                <div class="modal-footer d-flex align-items-center justify-content-center">
+                                  <button type="button"  class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                          
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        <!-- FIN MODAL -->
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="poster">
+
+                    <figure>
+                          <img src="./img/img-secciones/img-animacción/4.poster-sing_2.jpg" class="card-img card-img-top" alt="..."> 
+                                  <div class="contenido">
+                                      <h3 class="titulo">Sing 2</h3>
+                                      <p>Buster Moon y sus amigos deben persuadir a la estrella del 
+                                        rock Clay Calloway para que se una a ellos en el estreno de un nuevo espectáculo.</p>
+                                      <a class="btn bg-light fw-bold " data-bs-toggle="modal" data-bs-target="#Modal22"> 
+                                        Trailer 
+                                      </a>
+                                  </div>
+                          </figure>
+                    <div class="card-body">
+                      <h3 class="card-title">Sing 2</h3>
+                          <!-- MODAL -->
+                          <div class="modal fade modal-lg" id="Modal22"  aria-labelledby="ModalLabel" aria-hidden="true">
+                            <div class="modal-dialog">
+                              <div class="modal-content">
+                                <div class="modal-header ">
+                                  <h5 class="modal-title" id="ModalLabel">Trailer</h5>
+                                  <button type="button" id="btnvideo" class="btn-close bg-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <!-- VIDEO EN EL MODAL -->
+                                <div class="modal-body">
+                                  <div class="embed-responsive embed-responsive-4by3 ratio ratio-16x9">
+                                    <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/HREn8iMT2vo" id="iframeVideo"></iframe>
+                                </div>
+                                </div>
+                                <div class="modal-footer d-flex align-items-center justify-content-center">
+                                  <button type="button"  class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                    <!-- FIN MODAL -->
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                    <div class="poster">
+                      <figure>
+                          <img src="./img/img-secciones/img-animacción/5.poster-sonic_the_hedgehog_2.jpg" class="card-img card-img-top" alt="..."> 
+                                  <div class="contenido">
+                                      <h3 class="titulo">Sonic 2</h3>
+                                      <p>Después de establecerse en Green Hills, 
+                                        Sonic se muere por demostrar que tiene madera de auténtico héroe.</p>
+                                      <a class="btn bg-light fw-bold " data-bs-toggle="modal" data-bs-target="#Modal23"> 
+                                        Trailer 
+                                      </a>
+                                  </div>
+                          </figure>
+                      
+                      <div class="card-body">
+                        <h3 class="card-title">Sonic 2</h3>
+                              <!-- Modal -->
+                              <div class="modal fade modal-lg" id="Modal23"  aria-labelledby="ModalLabel" aria-hidden="true">
+                                <div class="modal-dialog">
+                                  <div class="modal-content">
+                                    <div class="modal-header ">
+                                      <h5 class="modal-title" id="ModalLabel">Trailer</h5>
+                                      <button type="button" id="btnvideo" class="btn-close bg-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                                    </div>
+                                    <!-- VIDEO EN EL MODAL -->
+                                    <div class="modal-body">
+                                      <div class="embed-responsive embed-responsive-4by3 ratio ratio-16x9">
+                                        <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/xMqnQLeQgSw" id="iframeVideo"></iframe>
+                                    </div>
+                                    </div>
+                                    <div class="modal-footer d-flex align-items-center justify-content-center">
+                                      <button type="button"  class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                              
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                        <!-- FIN MODAL -->
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col">
+                    <div class="poster">
+
+                      <figure>
+                          <img src="./img/img-secciones/img-animacción/6.poster-the_bad_guys.jpg" class="card-img card-img-top" alt="..."> 
+                                  <div class="contenido">
+                                      <h3 class="titulo">Los tipos malos</h3>
+                                      <p>Cuenta la historia de cinco famosos delincuentes que tratan de realizar su empresa más complicada hasta la fecha: portarse bien. 
+                                        Se basa en los libros ilustrados homónimos de Aaron Blabey. </p>
+                                      <a class="btn bg-light fw-bold " data-bs-toggle="modal" data-bs-target="#Modal24"> 
+                                        Trailer 
+                                      </a>
+                                  </div>
+                          </figure>
+                      <div class="card-body">
+                        <h3 class="card-title">Los tipos malos</h3>
+                                     <!-- Modal -->
+                              <div class="modal fade modal-lg" id="Modal24"  aria-labelledby="ModalLabel" aria-hidden="true">
+                                <div class="modal-dialog">
+                                  <div class="modal-content">
+                                    <div class="modal-header ">
+                                      <h5 class="modal-title" id="ModalLabel">Trailer</h5>
+                                      <button type="button" id="btnvideo" class="btn-close bg-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                                    </div>
+                                    <!-- VIDEO EN EL MODAL -->
+                                    <div class="modal-body">
+                                      <div class="embed-responsive embed-responsive-4by3 ratio ratio-16x9">
+                                        <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/51I5tvvHxtI" id="iframeVideo"></iframe>
+                                    </div>
+                                    </div>
+                                    <div class="modal-footer d-flex align-items-center justify-content-center">
+                                      <button type="button"  class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                              
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                        <!-- FIN MODAL -->
+                      </div>
+                    </div>
+                  </div>
+                  
+              </div>
+          </div>
+          </div>
+        <!-- FIN SECCIÓN 4 -->
+
+        <!-- SECCIÓN 5 -->
+        <div class="seccion" id="5">
+          <div class="">
+            <h1>Acción</h1>
+            <div class="row row-cols-2 row-cols-md-6 g-2">
+                <div class="col">
+                  <div class="poster">
+                    <figure>
+                          <img src="./img/img-secciones/img-accion/1.poster-fast_furious.jpg" class="card-img card-img-top" alt="..."> 
+                                  <div class="contenido">
+                                      <h3 class="titulo">Rápidos y furiosos 9</h3>
+                                      <p>Toretto lleva una vida tranquila con Letty y su hijo, 
+                                        pero saben que el peligro siempre acecha. Esta amenaza lo obligará a 
+                                        enfrentarse a su pasado si quiere salvar a los quiere. </p>
+                                      <a class="btn bg-light fw-bold " data-bs-toggle="modal" data-bs-target="#Modal25"> 
+                                        Trailer 
+                                      </a>
+                                  </div>
+                          </figure>
+                    <div class="card-body">
+                      <h3 class="card-title">Rápidos y furiosos 9</h3>
+                              <!-- Modal -->
+                              <div class="modal fade modal-lg" id="Modal25"  aria-labelledby="ModalLabel" aria-hidden="true">
+                                <div class="modal-dialog">
+                                  <div class="modal-content">
+                                    <div class="modal-header ">
+                                      <h5 class="modal-title" id="ModalLabel">Trailer</h5>
+                                      <button type="button" id="btnvideo" class="btn-close bg-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                                    </div>
+                                    <!-- VIDEO EN EL MODAL -->
+                                    <div class="modal-body">
+                                      <div class="embed-responsive embed-responsive-4by3 ratio ratio-16x9">
+                                        <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/3YNwcdVkpZQ" id="iframeVideo"></iframe>
+                                    </div>
+                                    </div>
+                                    <div class="modal-footer d-flex align-items-center justify-content-center">
+                                      <button type="button"  class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                              
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                        <!-- FIN MODAL -->
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="poster">
+                    <figure>
+                          <img src="./img/img-secciones/img-accion/2.poster-uncharted.jpg" class="card-img card-img-top" alt="..."> 
+                                  <div class="contenido">
+                                      <h3 class="titulo">Uncharted: Fuera del mapa</h3>
+                                      <p>Un día recibe la visita de Victor Sullivan, un misterioso hombre con un gran talento para robar como él, 
+                                        quien le trae noticias de su hermano.</p>
+                                      <a class="btn bg-light fw-bold " data-bs-toggle="modal" data-bs-target="#Modal26"> 
+                                        Trailer 
+                                      </a>
+                                  </div>
+                          </figure>
+                    <div class="card-body">
+                      <h3 class="card-title">Uncharted: Fuera del mapa</h3>
+                          <!-- Modal -->
+                              <div class="modal fade modal-lg" id="Modal26"  aria-labelledby="ModalLabel" aria-hidden="true">
+                                <div class="modal-dialog">
+                                  <div class="modal-content">
+                                    <div class="modal-header ">
+                                      <h5 class="modal-title" id="ModalLabel">Trailer</h5>
+                                      <button type="button" id="btnvideo" class="btn-close bg-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                                    </div>
+                                    <!-- VIDEO EN EL MODAL -->
+                                    <div class="modal-body">
+                                      <div class="embed-responsive embed-responsive-4by3 ratio ratio-16x9">
+                                        <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/o3iEa51nEew" id="iframeVideo"></iframe>
+                                    </div>
+                                    </div>
+                                    <div class="modal-footer d-flex align-items-center justify-content-center">
+                                      <button type="button"  class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                              
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                          <!-- FIN MODAL -->
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="poster">
+
+                    <figure>
+                          <img src="./img/img-secciones/img-accion/3.poster-top_gun_maverick.jpg" class="card-img card-img-top" alt="..."> 
+                                  <div class="contenido">
+                                      <h3 class="titulo">Top Gun: Maverick</h3>
+                                      <p>Después de más de treinta años de servicio, 
+                                       uno de los mejores aviadores de la Armada, "Maverick" se encuentra 
+                                        donde quiso estar: superando los límites 
+                                        como un valiente piloto de pruebas.</p>
+                                      <a class="btn bg-light fw-bold " data-bs-toggle="modal" data-bs-target="#Modal27"> 
+                                        Trailer 
+                                      </a>
+                                  </div>
+                          </figure>
+                    
+                    <div class="card-body">
+                      <h3 class="card-title">Top Gun: Maverick</h3>
+                              <!-- Modal -->
+                              <div class="modal fade modal-lg" id="Modal27"  aria-labelledby="ModalLabel" aria-hidden="true">
+                                <div class="modal-dialog">
+                                  <div class="modal-content">
+                                    <div class="modal-header ">
+                                      <h5 class="modal-title" id="ModalLabel">Trailer</h5>
+                                      <button type="button" id="btnvideo" class="btn-close bg-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                                    </div>
+                                    <!-- VIDEO EN EL MODAL -->
+                                    <div class="modal-body">
+                                      <div class="embed-responsive embed-responsive-4by3 ratio ratio-16x9">
+                                        <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/1w2P46uub7M" id="iframeVideo"></iframe>
+                                    </div>
+                                    </div>
+                                    <div class="modal-footer d-flex align-items-center justify-content-center">
+                                      <button type="button"  class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                              
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                        <!-- FIN MODAL -->
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="poster">
+
+                    <figure>
+                          <img src="./img/img-secciones/img-accion/4.poster-memory.jpg" class="card-img card-img-top" alt="..."> 
+                                  <div class="contenido">
+                                      <h3 class="titulo">Asesino sin memoria</h3>
+                                      <p>Un asesino a sueldo descubre que se ha convertido en un objetivo después de que se niega 
+                                        a completar un trabajo para una peligrosa organización criminal.</p>
+                                      <a class="btn bg-light fw-bold " data-bs-toggle="modal" data-bs-target="#Modal28"> 
+                                        Trailer 
+                                      </a>
+                                  </div>
+                          </figure>
+                    <div class="card-body">
+                      <h3 class="card-title">Asesino sin memoria</h3>
+                                <!-- Modal -->
+                              <div class="modal fade modal-lg" id="Modal28"  aria-labelledby="ModalLabel" aria-hidden="true">
+                                <div class="modal-dialog">
+                                  <div class="modal-content">
+                                    <div class="modal-header ">
+                                      <h5 class="modal-title" id="ModalLabel">Trailer</h5>
+                                      <button type="button" id="btnvideo" class="btn-close bg-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                                    </div>
+                                    <!-- VIDEO EN EL MODAL -->
+                                    <div class="modal-body">
+                                      <div class="embed-responsive embed-responsive-4by3 ratio ratio-16x9">
+                                        <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/TlEq00z5_s4" id="iframeVideo"></iframe>
+                                    </div>
+                                    </div>
+                                    <div class="modal-footer d-flex align-items-center justify-content-center">
+                                      <button type="button"  class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                              
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                        <!-- FIN MODAL -->
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                    <div class="poster">
+                      <figure>
+                          <img src="./img/img-secciones/img-accion/5.poster-mbulance.jpg" class="card-img card-img-top" alt="..."> 
+                                  <div class="contenido">
+                                      <h3 class="titulo">Ambulancia</h3>
+                                      <p>El veterano Will Sharp, en un acto desesperado por conseguir dinero para cubrir las deudas médicas de su esposa, recurre a la única persona que sabe que no debería, su hermano adoptivo Danny.</p>
+                                      <a class="btn bg-light fw-bold " data-bs-toggle="modal" data-bs-target="#Modal29"> 
+                                        Trailer 
+                                      </a>
+                                  </div>
+                          </figure>
+                      
+                      <div class="card-body">
+                        <h3 class="card-title">Ambulancia</h3>
+                                <!-- Modal -->
+                                <div class="modal fade modal-lg" id="Modal29"  aria-labelledby="ModalLabel" aria-hidden="true">
+                                  <div class="modal-dialog">
+                                    <div class="modal-content">
+                                      <div class="modal-header ">
+                                        <h5 class="modal-title" id="ModalLabel">Trailer</h5>
+                                        <button type="button" id="btnvideo" class="btn-close bg-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                                      </div>
+                                      <!-- VIDEO EN EL MODAL -->
+                                      <div class="modal-body">
+                                        <div class="embed-responsive embed-responsive-4by3 ratio ratio-16x9">
+                                          <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/3q-i4a7AtT0" id="iframeVideo"></iframe>
+                                      </div>
+                                      </div>
+                                      <div class="modal-footer d-flex align-items-center justify-content-center">
+                                        <button type="button"  class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                                
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              <!-- FIN MODAL -->
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col">
+                    <div class="poster">
+
+                      <figure>
+                          <img src="./img/img-secciones/img-accion/6.no_time_to_die.jpg" class="card-img card-img-top" alt="..."> 
+                                  <div class="contenido">
+                                      <h3 class="titulo">Sin tiempo para morir</h3>
+                                      <p>Bond ha dejado el servicio secreto y está disfrutando de una vida tranquila en Jamaica. 
+                                        Pero su calma no va a durar mucho tiempo.</p>
+                                      <a class="btn bg-light fw-bold " data-bs-toggle="modal" data-bs-target="#Modal30"> 
+                                        Trailer 
+                                      </a>
+                                  </div>
+                          </figure>
+                      
+                      <div class="card-body">
+                        <h3 class="card-title">Sin tiempo para morir</h3>
+                                  <!-- Modal -->
+                              <div class="modal fade modal-lg" id="Modal30"  aria-labelledby="ModalLabel" aria-hidden="true">
+                                <div class="modal-dialog">
+                                  <div class="modal-content">
+                                    <div class="modal-header ">
+                                      <h5 class="modal-title" id="ModalLabel">Trailer</h5>
+                                      <button type="button" id="btnvideo" class="btn-close bg-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                                    </div>
+                                    <!-- VIDEO EN EL MODAL -->
+                                    <div class="modal-body">
+                                      <div class="embed-responsive embed-responsive-4by3 ratio ratio-16x9">
+                                        <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/VYvmuz7ILvg" id="iframeVideo"></iframe>
+                                    </div>
+                                    </div>
+                                    <div class="modal-footer d-flex align-items-center justify-content-center">
+                                      <button type="button"  class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                              
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                        <!-- FIN MODAL -->
+                       
+                      </div>
+                    </div>
+                  </div>
+
+              </div>
+              
+          </div>
+          
+          </div>
+
+
+          <!-- SECCIÒN 6 CARRUSEL -->
+          <!-- <div class="seccion " id="6">
+            <div class="col">
+              <h1>Otros</h1>
+              <div id="carruselindicadores" class="carousel slide" data-bs-ride="true">
+                <div class="carousel-indicators">
+                  <button type="button" data-bs-target="#carruselindicadores" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                  <button type="button" data-bs-target="#carruselindicadores" data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+                </div>
+
+                <div class="carousel-inner">
+                  PRIMER SECCION CARRUSEL
+                  <div class="carousel-item active">
+                    <div class="row row-cols-2 row-cols-md-6 g-2">
+                      <div class="col">
+                        <div class="poster">
+                          <figure>
+                            <img
+                              src="https://ver.cuevana.pro/resize/200/storage/46605/YppbDS4p8aFKUGx32PaxUhbTWWOOiMVGYb59Lw1f.jpg"
+                              class="card-img card-img-top" alt="...">
+                            <div class="contenido">
+                              <h3 class="titulo">La Bestia</h3>
+                              <p>El Doctor Nate Samuels, que se ha quedado viudo recientemente, regresa a Sudáfrica, lugar en el
+                                que conoció a su mujer..!</p>
+                              <a class="btn bg-light fw-bold " data-bs-toggle="modal" data-bs-target="#Modal19">
+                                Trailer
+                              </a>
+                            </div>
+                          </figure>
+                          
+                          <div class="card-body">
+                            <h3 class="card-title">Hercules</h3>
+                            
+                          </div>
+                        </div>
+                      </div>
+          
+                      <div class="col">
+                        <div class="poster">
+          
+                          <figure>
+                            <img
+                              src="https://ver.cuevana.pro/resize/200/storage/46605/YppbDS4p8aFKUGx32PaxUhbTWWOOiMVGYb59Lw1f.jpg"
+                              class="card-img card-img-top" alt="...">
+                            <div class="contenido">
+                              <h3 class="titulo">La Bestia</h3>
+                              <p>El Doctor Nate Samuels, que se ha quedado viudo recientemente, regresa a Sudáfrica, lugar en el
+                                que conoció a su mujer..!</p>
+                              <a class="btn bg-light fw-bold " data-bs-toggle="modal" data-bs-target="#Modal19">
+                                Trailer
+                              </a>
+                            </div>
+                          </figure>
+                          
+                          <div class="card-body">
+                            <h3 class="card-title">Hercules</h3>
+                            
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col">
+                        <div class="poster">
+          
+                          <figure>
+                            <img
+                              src="https://ver.cuevana.pro/resize/200/storage/46605/YppbDS4p8aFKUGx32PaxUhbTWWOOiMVGYb59Lw1f.jpg"
+                              class="card-img card-img-top" alt="...">
+                            <div class="contenido">
+                              <h3 class="titulo">La Bestia</h3>
+                              <p>El Doctor Nate Samuels, que se ha quedado viudo recientemente, regresa a Sudáfrica, lugar en el
+                                que conoció a su mujer..!</p>
+                              <a class="btn bg-light fw-bold " data-bs-toggle="modal" data-bs-target="#Modal19">
+                                Trailer
+                              </a>
+                            </div>
+                          </figure>
+                          
+                          <div class="card-body">
+                            <h3 class="card-title">Hercules</h3>
+                            
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col">
+                        <div class="poster">
+          
+                          <figure>
+                            <img
+                              src="https://ver.cuevana.pro/resize/200/storage/46605/YppbDS4p8aFKUGx32PaxUhbTWWOOiMVGYb59Lw1f.jpg"
+                              class="card-img card-img-top" alt="...">
+                            <div class="contenido">
+                              <h3 class="titulo">La Bestia</h3>
+                              <p>El Doctor Nate Samuels, que se ha quedado viudo recientemente, regresa a Sudáfrica, lugar en el
+                                que conoció a su mujer..!</p>
+                              <a class="btn bg-light fw-bold " data-bs-toggle="modal" data-bs-target="#Modal19">
+                                Trailer
+                              </a>
+                            </div>
+                          </figure>
+                          
+                          <div class="card-body">
+                            <h3 class="card-title">Hercules</h3>
+                            
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col">
+                        <div class="poster">
+          
+                          <figure>
+                            <img
+                              src="https://ver.cuevana.pro/resize/200/storage/46605/YppbDS4p8aFKUGx32PaxUhbTWWOOiMVGYb59Lw1f.jpg"
+                              class="card-img card-img-top" alt="...">
+                            <div class="contenido">
+                              <h3 class="titulo">La Bestia</h3>
+                              <p>El Doctor Nate Samuels, que se ha quedado viudo recientemente, regresa a Sudáfrica, lugar en el
+                                que conoció a su mujer..!</p>
+                              <a class="btn bg-light fw-bold " data-bs-toggle="modal" data-bs-target="#Modal19">
+                                Trailer
+                              </a>
+                            </div>
+                          </figure>
+          
+                          <div class="card-body">
+                            <h3 class="card-title">Hercules</h3>
+          
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col">
+                        <div class="poster">
+          
+                          <figure>
+                            <img
+                              src="https://ver.cuevana.pro/resize/200/storage/46605/YppbDS4p8aFKUGx32PaxUhbTWWOOiMVGYb59Lw1f.jpg"
+                              class="card-img card-img-top" alt="...">
+                            <div class="contenido">
+                              <h3 class="titulo">La Bestia</h3>
+                              <p>El Doctor Nate Samuels, que se ha quedado viudo recientemente, regresa a Sudáfrica, lugar en el
+                                que conoció a su mujer..!</p>
+                              <a class="btn bg-light fw-bold " data-bs-toggle="modal" data-bs-target="#Modal19">
+                                Trailer
+                              </a>
+                            </div>
+                          </figure>
+          
+                          <div class="card-body">
+                            <h3 class="card-title">Hercules</h3>
+          
+                          </div>
+                        </div>
+                      </div>
+          
+          
+                    </div>
+                  </div>
+          
+                  <div class="carousel-item">
+                    <div class="row row-cols-2 row-cols-md-6 g-2">
+                      <div class="col">
+                        <div class="poster">
+          
+                          <figure>
+                            <img
+                              src="https://ver.cuevana.pro/resize/200/storage/46605/YppbDS4p8aFKUGx32PaxUhbTWWOOiMVGYb59Lw1f.jpg"
+                              class="card-img card-img-top" alt="...">
+                            <div class="contenido">
+                              <h3 class="titulo">La Bestia</h3>
+                              <p>El Doctor Nate Samuels, que se ha quedado viudo recientemente, regresa a Sudáfrica, lugar en el
+                                que conoció a su mujer..!</p>
+                              <a class="btn bg-light fw-bold " data-bs-toggle="modal" data-bs-target="#Modal19">
+                                Trailer
+                              </a>
+                            </div>
+                          </figure>
+                          
+                          <div class="card-body">
+                            <h3 class="card-title">Hercules</h3>
+                            
+                          </div>
+                        </div>
+                      </div>
+          
+                      <div class="col">
+                        <div class="poster">
+          
+                          <figure>
+                            <img
+                              src="https://ver.cuevana.pro/resize/200/storage/46605/YppbDS4p8aFKUGx32PaxUhbTWWOOiMVGYb59Lw1f.jpg"
+                              class="card-img card-img-top" alt="...">
+                            <div class="contenido">
+                              <h3 class="titulo">La Bestia</h3>
+                              <p>El Doctor Nate Samuels, que se ha quedado viudo recientemente, regresa a Sudáfrica, lugar en el
+                                que conoció a su mujer..!</p>
+                              <a class="btn bg-light fw-bold " data-bs-toggle="modal" data-bs-target="#Modal19">
+                                Trailer
+                              </a>
+                            </div>
+                          </figure>
+                          
+                          <div class="card-body">
+                            <h3 class="card-title">Hercules</h3>
+                            
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col">
+                        <div class="poster">
+          
+                          <figure>
+                            <img
+                              src="https://ver.cuevana.pro/resize/200/storage/46605/YppbDS4p8aFKUGx32PaxUhbTWWOOiMVGYb59Lw1f.jpg"
+                              class="card-img card-img-top" alt="...">
+                            <div class="contenido">
+                              <h3 class="titulo">La Bestia</h3>
+                              <p>El Doctor Nate Samuels, que se ha quedado viudo recientemente, regresa a Sudáfrica, lugar en el
+                                que conoció a su mujer..!</p>
+                              <a class="btn bg-light fw-bold " data-bs-toggle="modal" data-bs-target="#Modal19">
+                                Trailer
+                              </a>
+                            </div>
+                          </figure>
+                          
+                          <div class="card-body">
+                            <h3 class="card-title">Hercules</h3>
+                            
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col">
+                        <div class="poster">
+          
+                          <figure>
+                            <img
+                              src="https://ver.cuevana.pro/resize/200/storage/46605/YppbDS4p8aFKUGx32PaxUhbTWWOOiMVGYb59Lw1f.jpg"
+                              class="card-img card-img-top" alt="...">
+                            <div class="contenido">
+                              <h3 class="titulo">La Bestia</h3>
+                              <p>El Doctor Nate Samuels, que se ha quedado viudo recientemente, regresa a Sudáfrica, lugar en el
+                                que conoció a su mujer..!</p>
+                              <a class="btn bg-light fw-bold " data-bs-toggle="modal" data-bs-target="#Modal19">
+                                Trailer
+                              </a>
+                            </div>
+                          </figure>
+                          
+                          <div class="card-body">
+                            <h3 class="card-title">Hercules</h3>
+                            
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col">
+                        <div class="poster">
+          
+                          <figure>
+                            <img
+                              src="https://ver.cuevana.pro/resize/200/storage/46605/YppbDS4p8aFKUGx32PaxUhbTWWOOiMVGYb59Lw1f.jpg"
+                              class="card-img card-img-top" alt="...">
+                            <div class="contenido">
+                              <h3 class="titulo">La Bestia</h3>
+                              <p>El Doctor Nate Samuels, que se ha quedado viudo recientemente, regresa a Sudáfrica, lugar en el
+                                que conoció a su mujer..!</p>
+                              <a class="btn bg-light fw-bold " data-bs-toggle="modal" data-bs-target="#Modal19">
+                                Trailer
+                              </a>
+                            </div>
+                          </figure>
+                          
+                          <div class="card-body">
+                            <h3 class="card-title">Hercules</h3>
+                            
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col">
+                        <div class="poster">
+                          <figure>
+                            <img
+                              src="https://ver.cuevana.pro/resize/200/storage/46605/YppbDS4p8aFKUGx32PaxUhbTWWOOiMVGYb59Lw1f.jpg"
+                              class="card-img card-img-top" alt="...">
+                            <div class="contenido">
+                              <h3 class="titulo">La Bestia</h3>
+                              <p>El Doctor Nate Samuels, que se ha quedado viudo recientemente, regresa a Sudáfrica, lugar en el
+                                que conoció a su mujer..!</p>
+                              <a class="btn bg-light fw-bold " data-bs-toggle="modal" data-bs-target="#Modal19">
+                                Trailer
+                              </a>
+                            </div>
+                          </figure>
+                          
+                          <div class="card-body">
+                            <h3 class="card-title">Hercules</h3>
+                            
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+          
+                  </div>
+                </div>
+                CONTROLES DEL CARRUSEL
+                <button class="carousel-control-prev" type="button" data-bs-target="#carruselindicadores"
+                  data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carruselindicadores"
+                  data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+          
+            </div>
+          </div> -->
+
+        
+      </div>
+        <!-- FIN SECCIONES -->
+        <!-- <script src="js.js"></script> -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+
+  <footer class=" text-center ">
+    <!-- Copyright -->
+    <div class="d-flex  justify-content-center align-items-center text-center p-3" >
+      <label class="Copyright mx-2 fs-4">© 2022 Copyright: </label>
+      <a class="creditos text-center text-light fs-4" href="https://twitter.com/JoseaSosa24" target="_blank"> José Sosa</a>
+    </div>
+    <!-- Copyright -->
+  </footer>
+  
+</html>
